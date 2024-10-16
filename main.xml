@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".MainActivity">
+
+	<TabHost
+		android:id="@+id/tabhost"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<LinearLayout
+			style="@style/lnrmm">
+
+			<HorizontalScrollView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content">
+
+				<TabWidget
+					android:id="@android:id/tabs"
+					android:layout_width="wrap_content"
+					android:layout_height="40dp"/>
+
+			</HorizontalScrollView>
+
+			<FrameLayout
+				android:id="@android:id/tabcontent"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+
+				<ScrollView
+					style="@style/sscrl"
+					android:id="@+id/tab1">
+
+					<RelativeLayout
+						android:layout_width="match_parent"
+						android:layout_height="match_parent">
+
+						<TextView
+							android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:text="  بـحـث  "
+							android:id="@+id/run"
+							android:textColor="#000000"
+							android:gravity="center"
+							android:textSize="30sp"
+							android:layout_marginBottom="10dp"
+							android:layout_centerHorizontal="true"
+							android:layout_alignParentTop="true"/>
+
+						<TextView
+							style="@style/stxvw"
+							android:layout_below="@+id/run"
+							android:id="@+id/tx1"
+							android:text="من أسمائه"/>
+
+						<EditText
+							style="@style/sedtx"
+							android:layout_below="@+id/run"
+							android:layout_toLeftOf="@+id/tx1"
+							android:id="@+id/names"/>
+						
+						<TextView
+							style="@style/stxvw"
+							android:layout_below="@+id/names"
+							android:id="@+id/tx5"
+							android:text="من شيوخه"/>
+
+						<EditText
+							style="@style/sedtx"
+							android:layout_below="@+id/names"
+							android:layout_toLeftOf="@+id/tx5"
+							android:id="@+id/techrs"/>
+
+						<TextView
+							style="@style/stxvw"
+							android:layout_below="@+id/techrs"
+							android:id="@+id/tx6"
+							android:text="من تلاميذه"/>
+
+						<EditText
+							style="@style/sedtx"
+							android:layout_below="@+id/techrs"
+							android:layout_toLeftOf="@+id/tx6"
+							android:id="@+id/stdys"/>
+						
+						<TextView
+							style="@style/stxvw"
+							android:layout_below="@+id/stdys"
+							android:id="@+id/tx2"
+							android:text="أبو فلان"/>
+
+						<EditText
+							style="@style/sedtx"
+							android:layout_below="@+id/stdys"
+							android:layout_toLeftOf="@+id/tx2"
+							android:id="@+id/nick"/>
+
+						<TextView
+							style="@style/stxvw"
+							android:layout_below="@+id/nick"
+							android:id="@+id/tx3"
+							android:text="مواليه"/>
+
+						<EditText
+							style="@style/sedtx"
+							android:layout_below="@+id/nick"
+							android:layout_toLeftOf="@+id/tx3"
+							android:id="@+id/grdn"/>
+
+						<TextView
+							style="@style/stxvw"
+							android:layout_below="@+id/grdn"
+							android:id="@+id/tx4"
+							android:text="النسبة"/>
+
+						<EditText
+							style="@style/sedtx"
+							android:layout_below="@+id/grdn"
+							android:layout_toLeftOf="@+id/tx4"
+							android:id="@+id/fmly"/>
+						<TextView
+							style="@style/stxvw"
+							android:layout_below="@+id/fmly"
+							android:id="@+id/tx7"
+							android:text="ولد عام "/>
+
+						<EditText
+							style="@style/sedtx"
+							android:layout_below="@+id/fmly"
+							android:layout_toLeftOf="@+id/tx7"
+							android:id="@+id/brth"/>
+						<TextView
+							style="@style/stxvw"
+							android:layout_below="@+id/brth"
+							android:id="@+id/tx8"
+							android:text="مات عام "/>
+
+						<EditText
+							style="@style/sedtx"
+							android:layout_below="@+id/brth"
+							android:layout_toLeftOf="@+id/tx8"
+							android:id="@+id/deth"/>
+						
+						
+						<ProgressBar
+							style="@style/customProgressBar"
+							android:layout_height="wrap_content"
+							android:layout_width="wrap_content"
+							android:id="@+id/pwait"
+							android:visibility="gone"
+							android:layout_centerInParent="true" />
+
+					</RelativeLayout>
+
+				</ScrollView>
+
+				<LinearLayout
+					style="@style/lnrmm"
+					android:id="@+id/tab2">
+
+					<RelativeLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+
+						<TextView
+							style="@style/stxvw.pd"
+							android:id="@+id/nb_ntg"/>
+
+						<EditText
+							style="@style/sedtx"
+							android:id="@+id/sr_ntg"
+							android:layout_toLeftOf="@+id/nb_ntg"/>
+
+					</RelativeLayout>
+
+					<ScrollView
+						style="@style/sscrl">
+
+						<LinearLayout
+							style="@style/lnrmw"
+							android:id="@+id/grp"/>
+
+					</ScrollView>
+
+				</LinearLayout>
+				<LinearLayout
+					style="@style/lnrmm"
+					android:id="@+id/tab3">
+					<ScrollView
+						style="@style/sscrl">
+						<TextView
+							style="@style/stkart"
+							android:id="@+id/kart"/>
+					</ScrollView>
+				</LinearLayout>
+				<LinearLayout
+					style="@style/lnrmm"
+					android:id="@+id/tab4">
+
+					<RelativeLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+
+						<TextView
+							style="@style/stxvw.pd"
+							android:id="@+id/nb_cmn"/>
+
+						<EditText
+							style="@style/sedtx"
+							android:id="@+id/sr_cmn"
+							android:layout_toLeftOf="@+id/nb_cmn"/>
+
+					</RelativeLayout>
+
+					<ScrollView
+						style="@style/sscrl">
+
+						<LinearLayout
+							style="@style/lnrmw"
+							android:id="@+id/comn"/>
+
+					</ScrollView>
+
+				</LinearLayout>
+
+				<LinearLayout
+					style="@style/lnrmm"
+					android:id="@+id/tab5">
+
+					<RelativeLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+
+						<TextView
+							style="@style/stxvw.pd"
+							android:id="@+id/nb_tch"/>
+
+						<EditText
+							style="@style/sedtx"
+							android:id="@+id/sr_tch"
+							android:layout_toLeftOf="@+id/nb_tch"/>
+
+					</RelativeLayout>
+
+					<ScrollView
+						style="@style/sscrl">
+
+						<LinearLayout
+							style="@style/lnrmw"
+							android:id="@+id/tech"/>
+
+					</ScrollView>
+
+				</LinearLayout>
+
+				<LinearLayout
+					style="@style/lnrmm"
+					android:id="@+id/tab6">
+
+					<RelativeLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+
+						<TextView
+							style="@style/stxvw.pd"
+							android:id="@+id/nb_std"/>
+
+						<EditText
+							style="@style/sedtx"
+							android:id="@+id/sr_std"
+							android:layout_toLeftOf="@+id/nb_std"/>
+
+					</RelativeLayout>
+
+					<ScrollView
+						style="@style/sscrl">
+
+						<LinearLayout
+							style="@style/lnrmw"
+							android:id="@+id/stdy"/>
+
+					</ScrollView>
+
+				</LinearLayout>
+				
+				<LinearLayout
+					style="@style/lnrmm"
+					android:id="@+id/tab7">
+					<RelativeLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+
+						<TextView
+							style="@style/stxvw.pd"
+							android:id="@+id/nb_sve"/>
+
+						<EditText
+							style="@style/sedtx"
+							android:id="@+id/sr_sve"
+							android:layout_toLeftOf="@+id/nb_sve"/>
+
+					</RelativeLayout>
+					<ScrollView
+						style="@style/sscrl">
+
+						<LinearLayout
+							style="@style/lnrmw"
+							android:id="@+id/sve"/>
+
+					</ScrollView>
+
+				</LinearLayout>
+				<LinearLayout
+					style="@style/lnrmm"
+					android:id="@+id/tab8">
+					<RelativeLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+
+						<TextView
+							style="@style/stxvw.pd"
+							android:id="@+id/nb_fms"/>
+
+						<EditText
+							style="@style/sedtx"
+							android:id="@+id/sr_fms"
+							android:layout_toLeftOf="@+id/nb_fms"/>
+
+					</RelativeLayout>
+					<ScrollView
+						style="@style/sscrl">
+
+						<LinearLayout
+							style="@style/lnrmw"
+							android:id="@+id/fms"/>
+
+					</ScrollView>
+
+				</LinearLayout>
+			</FrameLayout>
+
+		</LinearLayout>
+
+	</TabHost>
+</LinearLayout>
